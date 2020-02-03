@@ -5,4 +5,4 @@ A simple dropdown navigation menu made with CSS Only. Dropdowns are marked with 
 
 Resize the screen to see the look if the screen is smaller then 768px
 
-![](Screenshot.png)
+![](Screenshot-1.png)
