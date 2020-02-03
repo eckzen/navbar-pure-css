@@ -4,38 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>navbar</title>
+    <title>Navbar with Dropdown</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div class="nav">
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
-        <div class="nav-title">
-          JoGeek
-        </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+    <nav>
+      <div id="logo">Your Logo here</div>
 
-      <div class="nav-links">
-        <a href="//github.io/jo_geek" target="_blank">Github</a>
-        <a href="http://stackoverflow.com/users/4084003/" target="_blank"
-          >Stackoverflow</a
-        >
-        <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-        <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank"
-          >JsFiddle</a
-        >
-      </div>
-    </div>
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-1" class="toggle">WordPress +</label>
+          <a href="#">WordPress</a>
+          <input type="checkbox" id="drop-1" />
+          <ul>
+            <li><a href="#">Themes and stuff</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Tutorials</a></li>
+          </ul>
+        </li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-2" class="toggle">Web Design +</label>
+          <a href="#">Web Design</a>
+          <input type="checkbox" id="drop-2" />
+          <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Links</a></li>
+            <li>
+              <!-- Second Tier Drop Down -->
+              <label for="drop-3" class="toggle">Tutorials +</label>
+              <a href="#">Tutorials</a>
+              <input type="checkbox" id="drop-3" />
+
+              <ul>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">Other</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
